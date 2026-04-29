@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskMatrix | Home</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="navbar">
+      <div class="brand">
+        <span class="brand-mark">TM</span>
+      </div>
+      <div class="nav-menu">
+        <input id="nav-toggle" type="checkbox" class="nav-toggle-input" />
+        <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#tasks">Tasks</a>
+          <a href="#team">Team</a>
+          <a href="#insights">Insights</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="home-hero" id="overview">
+      <div class="home-hero-copy">
+        <p class="eyebrow">Welcome back, manager</p>
+        <h2>Run your team with clarity, cadence, and confidence.</h2>
+        <p>Track task progress, assign work, and keep every milestone visible in one premium command center.</p>
+        <div class="home-hero-actions">
+          <a class="button button-primary" href="#tasks">Open task board</a>
+          <a class="button button-secondary" href="#team">Review team</a>
+        </div>
+      </div>
+
+      <div class="home-hero-panel panel-card">
+        <div class="dash-grid">
+          <article class="dash-card">
+            <span>94%</span>
+            <p>Team completion rate</p>
+          </article>
+          <article class="dash-card">
+            <span>18</span>
+            <p>Tasks due today</p>
+          </article>
+          <article class="dash-card">
+            <span>7</span>
+            <p>High priority items</p>
+          </article>
+        </div>
+        <div class="home-card-footer">
+          <div>
+            <strong>Active sprint</strong>
+            <p>6 days remaining / 28 tasks</p>
+          </div>
+          <div>
+            <strong>Team load</strong>
+            <p>Balanced across 5 members</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block" id="tasks">
+      <div class="section-heading">
+        <p class="eyebrow">Tasks</p>
+        <h2>Deliver work with a smart task workflow.</h2>
+      </div>
+      <div class="task-grid">
+        <article class="task-card">
+          <div class="task-label">Design</div>
+          <h3>Revamp dashboard layout</h3>
+          <p>Update the manager and employee views for faster decision-making.</p>
+          <div class="task-meta">
+            <span>Due in 2 days</span>
+            <span>Priority high</span>
+          </div>
+        </article>
+        <article class="task-card">
+          <div class="task-label">Planning</div>
+          <h3>Weekly sprint review</h3>
+          <p>Collect status updates and adjust priorities for the next cycle.</p>
+          <div class="task-meta">
+            <span>Due tomorrow</span>
+            <span>Priority medium</span>
+          </div>
+        </article>
+        <article class="task-card">
+          <div class="task-label">Follow-up</div>
+          <h3>Check employee submissions</h3>
+          <p>Review end-of-day task sheets and completion percentages.</p>
+          <div class="task-meta">
+            <span>Due today</span>
+            <span>Priority high</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="team">
+      <div class="section-heading">
+        <p class="eyebrow">Team</p>
+        <h2>Keep every role connected and informed.</h2>
+      </div>
+      <div class="team-grid">
+        <article class="team-card">
+          <h3>Maya Patel</h3>
+          <p>Working on task assignment and delivery tracking.</p>
+          <span>Complete 83%</span>
+        </article>
+        <article class="team-card">
+          <h3>Ravi Sharma</h3>
+          <p>Updating task statuses and preparing next sprint work.</p>
+          <span>Complete 91%</span>
+        </article>
+        <article class="team-card">
+          <h3>Emma Lee</h3>
+          <p>Reviewing employee progress and daily check-ins.</p>
+          <span>Complete 76%</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="insights">
+      <div class="section-heading">
+        <p class="eyebrow">Insights</p>
+        <h2>Spot bottlenecks before they slow the team down.</h2>
+      </div>
+      <div class="insight-grid">
+        <article class="insight-card">
+          <h3>Load balancing</h3>
+          <p>See who is overbooked and shift work proactively.</p>
+        </article>
+        <article class="insight-card">
+          <h3>Completion trends</h3>
+          <p>Track daily and weekly velocity for stronger planning.</p>
+        </article>
+        <article class="insight-card">
+          <h3>Priority focus</h3>
+          <p>Keep top work visible and reduce late-stage rushes.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

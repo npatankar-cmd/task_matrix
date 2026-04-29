@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskMatrix | Premium Task Management</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="navbar">
+      <div class="brand">
+        <span class="brand-mark">TM</span>
+      </div>
+      <nav class="nav-links">
+      </nav>
+    </header>
+
+    <main class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Next-level visibility</p>
+        <h2>Command your team with premium task intelligence.</h2>
+        <p>One elegant dashboard experience built for managers and employees. Track progress, performance, and daily task health across every cadence.</p>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-card login-card">
+          <div class="auth-tabs">
+            <button class="tab-button active" id="login-tab">Login</button>
+            <button class="tab-button" id="register-tab">Register</button>
+          </div>
+          <div class="auth-container" id="auth-container">
+            <form class="auth-form login-form" id="login-form">
+              <div class="input-group">
+                <label for="login-email">Email</label>
+                <input id="login-email" type="email" placeholder="your@email.com" />
+              </div>
+              <div class="input-group">
+                <label for="login-password">Password</label>
+                <input id="login-password" type="password" placeholder="••••••••" />
+              </div>
+              <button type="submit" class="button button-primary">Login</button>
+            </form>
+            <form class="auth-form register-form" id="register-form">
+              <div class="input-group">
+                <label for="register-name">Full Name</label>
+                <input id="register-name" type="text" placeholder="John Doe" />
+              </div>
+              <div class="input-group">
+                <label for="register-email">Email</label>
+                <input id="register-email" type="email" placeholder="your@email.com" />
+              </div>
+              <div class="input-group">
+                <label for="register-password">Password</label>
+                <input id="register-password" type="password" placeholder="••••••••" />
+              </div>
+              <button type="submit" class="button button-primary">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+  </div>
+  <script>
+    // Wait for DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginForm = document.getElementById('login-form');
+      const registerForm = document.getElementById('register-form');
+      const loginTab = document.getElementById('login-tab');
+      const registerTab = document.getElementById('register-tab');
+
+      // Set login form as active on load
+      if (loginForm) {
+        loginForm.classList.add('active');
+      }
+
+      loginTab.addEventListener('click', function() {
+        this.classList.add('active');
+        registerTab.classList.remove('active');
+        loginForm.classList.add('active');
+        registerForm.classList.remove('active');
+      });
+
+      registerTab.addEventListener('click', function() {
+        this.classList.add('active');
+        loginTab.classList.remove('active');
+        registerForm.classList.add('active');
+        loginForm.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
