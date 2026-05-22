@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskMatrix | Tasks</title>
+  <link rel="stylesheet" href="tasks.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <input id="nav-toggle" type="checkbox" class="nav-toggle-input" />
+      <div class="sidebar-top">
+        <div class="brand">
+          <a href="home.html"><span class="brand-mark">TM</span></a>
+          <div class="brand-copy">
+            <span class="brand-title">TaskMatrix</span>
+            <span class="brand-subtitle">Tasks</span>
+          </div>
+        </div>
+
+        <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <nav class="nav-links">
+        <a href="profile.html"><span>Profile</span></a>
+        <a href="#"><span>Dashobord</span></a>
+        <a href="tasks.html" class="active"><span>Tasks</span></a>
+        <a href="#team"><span>Team</span></a>
+        <a href="#calendar"><span>Calendar</span></a>
+        <a href="#reports"><span>Reports</span></a>
+        <a href="#settings"><span>Settings</span></a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="button button-secondary">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="page-top">
+        <div class="page-copy">
+          <h1>Tasks</h1>
+          <p class="page-description">Track, manage, and organize team tasks efficiently.</p>
+        </div>
+
+        <div class="page-actions">
+          <label class="search-field" for="task-search">
+            <span class="visually-hidden">Search tasks</span>
+            <input id="task-search" type="search" placeholder="Search tasks..." />
+          </label>
+        </div>
+      </section>
+
+      <section class="overview-strip" aria-label="Task overview stats">
+        <div class="overview-item">
+          <span class="overview-label">Total Tasks</span>
+          <span class="overview-value">24</span>
+          <span class="overview-note">Updated just now</span>
+        </div>
+        <div class="overview-item">
+          <span class="overview-label">In Progress</span>
+          <span class="overview-value">9</span>
+          <span class="overview-note">3 due today</span>
+        </div>
+        <div class="overview-item">
+          <span class="overview-label">Completed</span>
+          <span class="overview-value">11</span>
+          <span class="overview-note">Weekly pace</span>
+        </div>
+        <div class="overview-item">
+          <span class="overview-label">Overdue</span>
+          <span class="overview-value">4</span>
+          <span class="overview-note">Needs attention</span>
+        </div>
+      </section>
+
+      <section class="filters-row" aria-label="Task filters">
+        <div class="filter-field">
+          <label for="status-filter">Status</label>
+          <select id="status-filter">
+            <option>All statuses</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+            <option>Pending</option>
+            <option>Review</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="priority-filter">Priority</label>
+          <select id="priority-filter">
+            <option>All priorities</option>
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="team-filter">Team</label>
+          <select id="team-filter">
+            <option>All teams</option>
+            <option>Design</option>
+            <option>Engineering</option>
+            <option>Product</option>
+          </select>
+        </div>
+        <div class="filter-field sort-field">
+          <label for="sort-filter">Sort</label>
+          <select id="sort-filter">
+            <option>Newest first</option>
+            <option>Oldest first</option>
+            <option>Due date</option>
+            <option>Priority</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="task-table-section" aria-label="Task list">
+        <div class="task-table-head" aria-hidden="true">
+          <span class="task-column task-checkbox"></span>
+          <span class="task-column task-info">Task</span>
+          <span class="task-column task-priority">Priority</span>
+          <span class="task-column task-status">Status</span>
+          <span class="task-column task-owner">Owner</span>
+          <span class="task-column task-due">Due</span>
+          <span class="task-column task-options"></span>
+        </div>
+
+        <ul class="task-list">
+          <li class="task-row">
+            <label class="task-checkbox">
+              <input type="checkbox" />
+            </label>
+            <div class="task-info">
+              <span class="task-title">Work on Website SEO</span>
+              <span class="task-note">Complete the SEO tasks and report to rahul sir.</span>
+            </div>
+            <span class="task-badge priority-high">High</span>
+            <span class="status-pill status-in-progress">In Progress</span>
+            <span class="task-owner">
+              <span class="avatar" data-color="1">NP</span>
+              <span>Nishant</span>
+            </span>
+            <span class="due-date">May 28</span>
+            <button class="more-action" aria-label="More options">⋯</button>
+          </li>
+
+         
+
+         
+        </ul>
+      </section>
+
+      <section class="empty-state task-empty-state" aria-label="Empty task state">
+        <div class="empty-illustration" aria-hidden="true">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <rect x="12" y="16" width="40" height="32" rx="10" />
+            <path d="M20 26h24M20 34h16" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <h2>No tasks created yet</h2>
+        <p>Keep your team aligned by adding the first task and tracking progress from a single workspace.</p>
+        <button class="button button-primary" type="button">Create first task</button>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

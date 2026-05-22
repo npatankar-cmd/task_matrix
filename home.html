@@ -8,145 +8,206 @@
 </head>
 <body>
   <div class="app-shell">
-    <header class="navbar">
-      <div class="brand">
-        <span class="brand-mark">TM</span>
-      </div>
-      <div class="nav-menu">
-        <input id="nav-toggle" type="checkbox" class="nav-toggle-input" />
-        <label for="nav-toggle" class="nav-toggle-btn" aria-label="Open navigation">
+    <aside class="sidebar">
+      <input id="nav-toggle" type="checkbox" class="nav-toggle-input" />
+      <div class="sidebar-top">
+        <div class="brand">
+       <a href="home.html">  <span class="brand-mark">TM</span></a>
+          <div class="brand-copy">
+            <span class="brand-title">TaskMatrix</span>
+            <span class="brand-subtitle">Team management</span>
+          </div>
+        </div>
+
+        <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu">
           <span></span>
           <span></span>
           <span></span>
         </label>
-        <nav class="nav-links">
-          <a href="#overview">Overview</a>
-          <a href="#tasks">Tasks</a>
-          <a href="#team">Team</a>
-          <a href="#insights">Insights</a>
-        </nav>
       </div>
-    </header>
 
-    <section class="home-hero" id="overview">
-      <div class="home-hero-copy">
-        <p class="eyebrow">Welcome back, manager</p>
-        <h2>Run your team with clarity, cadence, and confidence.</h2>
-        <p>Track task progress, assign work, and keep every milestone visible in one premium command center.</p>
-        <div class="home-hero-actions">
-          <a class="button button-primary" href="#tasks">Open task board</a>
-          <a class="button button-secondary" href="#team">Review team</a>
+      <nav class="nav-links">
+        <a href="profile.html" ><span>Profile</span></a>
+      <a href="#"><span>Dashobord</span></a>
+        <a href="tasks.html" ><span>Tasks</span></a>
+        <a href="#team" ><span>Team</span></a>
+        <a href="#calendar"><span>Calendar</span></a>
+        <a href="#reports" ><span>Reports</span></a>
+        <a href="#settings"><span>Settings</span></a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="button button-secondary">Logout</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="empty-state">
+        <h1>Team task management</h1>
+        <p>Use the sidebar to navigate between profile, tasks, team planning, calendar, reports, and settings.</p>
+      </section>
+
+      <div class="sections-container">
+        <section class="daily-updates">
+        <h2>📅 Daily Updates</h2>
+        <div class="updates-list">
+            <div class="update-item">
+              <div class="update-time">Today, 10:30 AM</div>
+        <p><strong>Project Alpha</strong> milestone completed by the team.</p>
+            </div>
+           <div class="update-item">
+              <div class="update-time">Today, 9:45 AM</div>
+      <p><strong>Team Meeting</strong> scheduled for 2:00 PM in Conference Room B.</p>
+            </div>
+            <div class="update-item">
+              <div class="update-time">Yesterday, 5:20 PM</div>
+          <p><strong>Design Review</strong> feedback submitted on UI redesign.</p>
+            </div>
+                   <div class="update-item">
+                        <div class="update-time">Yesterday, 2:15 PM</div>
+               <p><strong>New Task</strong> assigned: API Integration for Payment Module.</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="priority-tasks">
+        <h2>⚡ Tasks by Priority</h2>
+        <div class="priority-container">
+          <div class="priority-column high-priority">
+            <div class="priority-header">🔴 High Priority</div>
+            <div class="priority-items">
+              <div class="priority-item">
+                  <h4>Fix critical bug in authentication</h4>
+                <p>John Smith • Due: Today</p>
+              </div>
+              <div class="priority-item">
+                <h4>Client emergency support ticket</h4>
+                <p>Sarah Johnson • Due: Today</p>
+              </div>
+              <div class="priority-item">
+                <h4>Database performance optimization</h4>
+                <p>Mike Chen • Due: Tomorrow</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="priority-column medium-priority">
+            <div class="priority-header">🟡 Medium Priority</div>
+            <div class="priority-items">
+              <div class="priority-item">
+                <h4>Review pull requests</h4>
+                <p>Sarah Johnson • Due: Tomorrow</p>
+              </div>
+              <div class="priority-item">
+                <h4>Update API documentation</h4>
+                <p>Alex Rivera • Due: This week</p>
+              </div>
+              <div class="priority-item">
+                <h4>Code refactoring for module</h4>
+                <p>Emily Davis • Due: This week</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="priority-column low-priority">
+            <div class="priority-header">🟢 Low Priority</div>
+            <div class="priority-items">
+              <div class="priority-item">
+                <h4>Update documentation</h4>
+                <p>Mike Chen • Due: Next week</p>
+              </div>
+              <div class="priority-item">
+                <h4>Minor UI improvements</h4>
+                <p>Lisa Wong • Due: Next week</p>
+              </div>
+              <div class="priority-item">
+                <h4>Research new tools</h4>
+                <p>James Wilson • Due: Flexible</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="home-hero-panel panel-card">
-        <div class="dash-grid">
-          <article class="dash-card">
-            <span>94%</span>
-            <p>Team completion rate</p>
-          </article>
-          <article class="dash-card">
-            <span>18</span>
-            <p>Tasks due today</p>
-          </article>
-          <article class="dash-card">
-            <span>7</span>
-            <p>High priority items</p>
-          </article>
-        </div>
-        <div class="home-card-footer">
-          <div>
-            <strong>Active sprint</strong>
-            <p>6 days remaining / 28 tasks</p>
+      <section class="assigned-tasks">
+        <h2>📋 Assigned Tasks</h2>
+        <div class="tasks-summary">
+          <div class="task-stat">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Active Tasks</div>
           </div>
-          <div>
-            <strong>Team load</strong>
-            <p>Balanced across 5 members</p>
+          <div class="task-stat">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Due Today</div>
+          </div>
+          <div class="task-stat">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Overdue</div>
+          </div>
+          <div class="task-stat">
+            <div class="stat-number">28</div>
+            <div class="stat-label">Completed</div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section-block" id="tasks">
-      <div class="section-heading">
-        <p class="eyebrow">Tasks</p>
-        <h2>Deliver work with a smart task workflow.</h2>
-      </div>
-      <div class="task-grid">
-        <article class="task-card">
-          <div class="task-label">Design</div>
-          <h3>Revamp dashboard layout</h3>
-          <p>Update the manager and employee views for faster decision-making.</p>
-          <div class="task-meta">
-            <span>Due in 2 days</span>
-            <span>Priority high</span>
+        <div class="priority-container">
+          <div class="priority-column high-priority">
+            <div class="priority-header">🔴 High Priority</div>
+            <div class="priority-items">
+              <div class="priority-item">
+                <h4>Fix critical bug in authentication</h4>
+                <p>Assigned to: John Smith • Due: Today</p>
+              </div>
+            </div>
           </div>
-        </article>
-        <article class="task-card">
-          <div class="task-label">Planning</div>
-          <h3>Weekly sprint review</h3>
-          <p>Collect status updates and adjust priorities for the next cycle.</p>
-          <div class="task-meta">
-            <span>Due tomorrow</span>
-            <span>Priority medium</span>
+          <div class="priority-column medium-priority">
+            <div class="priority-header">🟡 Medium Priority</div>
+            <div class="priority-items">
+              <div class="priority-item">
+                <h4>Review pull requests</h4>
+                <p>Assigned to: Sarah Johnson • Due: Tomorrow</p>
+              </div>
+            </div>
           </div>
-        </article>
-        <article class="task-card">
-          <div class="task-label">Follow-up</div>
-          <h3>Check employee submissions</h3>
-          <p>Review end-of-day task sheets and completion percentages.</p>
-          <div class="task-meta">
-            <span>Due today</span>
-            <span>Priority high</span>
+          <div class="priority-column low-priority">
+            <div class="priority-header">🟢 Low Priority</div>
+            <div class="priority-items">
+              <div class="priority-item">
+                <h4>Update documentation</h4>
+                <p>Assigned to: Mike Chen • Due: This week</p>
+              </div>
+            </div>
           </div>
-        </article>
+        </div>
+      </section>
       </div>
-    </section>
 
-    <section class="section-block" id="team">
-      <div class="section-heading">
-        <p class="eyebrow">Team</p>
-        <h2>Keep every role connected and informed.</h2>
-      </div>
-      <div class="team-grid">
-        <article class="team-card">
-          <h3>Maya Patel</h3>
-          <p>Working on task assignment and delivery tracking.</p>
-          <span>Complete 83%</span>
-        </article>
-        <article class="team-card">
-          <h3>Ravi Sharma</h3>
-          <p>Updating task statuses and preparing next sprint work.</p>
-          <span>Complete 91%</span>
-        </article>
-        <article class="team-card">
-          <h3>Emma Lee</h3>
-          <p>Reviewing employee progress and daily check-ins.</p>
-          <span>Complete 76%</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-block" id="insights">
-      <div class="section-heading">
-        <p class="eyebrow">Insights</p>
-        <h2>Spot bottlenecks before they slow the team down.</h2>
-      </div>
-      <div class="insight-grid">
-        <article class="insight-card">
-          <h3>Load balancing</h3>
-          <p>See who is overbooked and shift work proactively.</p>
-        </article>
-        <article class="insight-card">
-          <h3>Completion trends</h3>
-          <p>Track daily and weekly velocity for stronger planning.</p>
-        </article>
-        <article class="insight-card">
-          <h3>Priority focus</h3>
-          <p>Keep top work visible and reduce late-stage rushes.</p>
-        </article>
-      </div>
-    </section>
+      <section class="team-metrics">
+        <h2>👥 Team Performance</h2>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-title">Team Productivity</div>
+            <div class="metric-bar">
+              <div class="metric-progress" style="width: 85%"></div>
+            </div>
+            <div class="metric-value">85% Complete</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-title">Task Completion Rate</div>
+            <div class="metric-bar">
+              <div class="metric-progress" style="width: 92%"></div>
+            </div>
+            <div class="metric-value">92% On Time</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-title">Team Capacity</div>
+            <div class="metric-bar">
+              <div class="metric-progress" style="width: 68%"></div>
+            </div>
+            <div class="metric-value">68% Utilized</div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 </html>

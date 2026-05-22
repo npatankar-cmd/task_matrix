@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskMatrix | Profile</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <input id="nav-toggle" type="checkbox" class="nav-toggle-input" />
+      <div class="sidebar-top">
+        <div class="brand">
+          <a href="home.html"><span class="brand-mark">TM</span></a>
+          <div class="brand-copy">
+            <span class="brand-title">TaskMatrix</span>
+            <span class="brand-subtitle">Profile</span>
+          </div>
+        </div>
+
+        <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <nav class="nav-links">
+        <a href="profile.html" class="active"><span>Profile</span></a>
+        <a href="#"><span>Dashobord</span></a>
+        <a href="tasks.html"><span>Tasks</span></a>
+        <a href="#team"><span>Team</span></a>
+        <a href="#calendar"><span>Calendar</span></a>
+        <a href="#reports"><span>Reports</span></a>
+        <a href="#settings"><span>Settings</span></a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="button button-secondary">Logout</button>
+      </div>
+    </aside>
+
+    <main class="profile-content">
+      <section class="profile-hero">
+        <div class="profile-header-wrapper">
+          <div class="profile-intro">
+            <div class="avatar-wrapper">
+              <div class="avatar">NP</div>
+            </div>
+            <div class="intro-content">
+              <h1>Nishant Patankar</h1>
+              <p class="profile-subtitle">Marketing Specialist · The DNV Group</p>
+              <p class="profile-meta">Mumbai, MH</p>
+              <p class="profile-bio">Driven by data-led productivity, connecting distributed teams with clarity, automation, and enterprise-grade collaboration across every task, project, and workflow.</p>
+              <div class="intro-actions">
+                <button class="button button-primary">Edit Profile</button>
+                <button class="button button-secondary">Share Settings</button>
+              </div>
+            </div>
+            <div class="intro-contact">
+              <div class="status-field">
+                <label for="status-select">Status</label>
+                <select id="status-select" class="status-dropdown">
+                  <option value="available" selected>Available</option>
+                  <option value="busy">Busy</option>
+                  <option value="away">Away</option>
+                  <option value="do-not-disturb">Do Not Disturb</option>
+                  <option value="offline">Offline</option>
+               </select>
+              </div>
+              <div class="contact-item">
+                <span>Email</span>
+                <strong>nishant.patankar@taskmatrix.io</strong>
+              </div>
+              <div class="contact-item">
+                <span>Phone</span>
+                <strong>+1 (415) 798-3240</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+</section>
+</main>
+</div>
+</body>
+</html>
