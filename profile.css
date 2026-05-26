@@ -69,6 +69,53 @@ button {
   gap: 22px;
 }
 
+
+.meetings-update {
+  margin: 20px 0 50px 0;
+  display: grid;
+  gap: 12px;
+}
+
+.meetings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.meetings-header p {
+  margin: 0;
+  font-weight: 600;
+  color: #f6f7fb;
+  font-size: 0.95rem;
+}
+
+
+.meetings-list {
+  display: grid;
+  gap: 10px;
+}
+
+.meeting-item {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  border-left: 2px solid #ffffff;
+}
+
+.meeting-time {
+  font-size: 0.82rem;
+  color: #d1d6ff;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.meeting-with {
+  font-size: 0.78rem;
+  color: #a3a8c2;
+}
+
+
 .brand {
   display: flex;
   align-items: center;
@@ -176,6 +223,7 @@ button {
   display: grid;
   place-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 20px;
 }
 
 .button,
@@ -186,6 +234,11 @@ button {
   border-radius: 999px;
   padding: 14px 24px;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.intro-actions .button{
+  height:50px;
+  width:150px;
 }
 
 .button,

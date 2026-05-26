@@ -28,14 +28,12 @@
 
       <nav class="nav-links">
         <a href="profile.html"><span>Profile</span></a>
-        <a href="#"><span>Dashobord</span></a>
+        <a href="dashboard.html"><span>Dashboard</span></a>
         <a href="tasks.html" class="active"><span>Tasks</span></a>
-        <a href="#team"><span>Team</span></a>
-        <a href="#calendar"><span>Calendar</span></a>
-        <a href="#reports"><span>Reports</span></a>
         <a href="#settings"><span>Settings</span></a>
       </nav>
 
+      <div class="footer_empty"></div>  
       <div class="sidebar-footer">
         <button class="button button-secondary">Logout</button>
       </div>
@@ -119,7 +117,8 @@
         </div>
       </section>
 
-      <section class="task-table-section" aria-label="Task list">
+      <details class="task-table-section" aria-label="Task list"><!-- 388 to 417-->
+        <summary class="task-table-summary">Task List</summary>
         <div class="task-table-head" aria-hidden="true">
           <span class="task-column task-checkbox"></span>
           <span class="task-column task-info">Task</span>
@@ -153,7 +152,7 @@
 
          
         </ul>
-      </section>
+      </details>
 
       <section class="empty-state task-empty-state" aria-label="Empty task state">
         <div class="empty-illustration" aria-hidden="true">
